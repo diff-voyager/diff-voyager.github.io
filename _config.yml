@@ -1,0 +1,12 @@
+title: diff-voyager
+tagline: before/after migration diff for the web
+description: diff-voyager compares a website before and after a migration, covering visuals, SEO and communication. Early-stage project.
+url: https://diff-voyager.github.io
+baseurl: ""
+repository_url: https://github.com/diff-voyager/diff-voyager
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

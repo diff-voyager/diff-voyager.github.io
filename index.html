@@ -1,69 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>diff-voyager — before/after migration diff for the web</title>
-<meta name="description" content="diff-voyager compares a website before and after a migration: visuals, SEO and communication. Early-stage project.">
-<meta property="og:title" content="diff-voyager">
-<meta property="og:description" content="Compare a website before and after a migration: visuals, SEO and communication.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://diff-voyager.github.io/">
-<meta property="og:image" content="https://diff-voyager.github.io/logo-512.png">
-<link rel="canonical" href="https://diff-voyager.github.io/">
-<meta name="theme-color" content="#0B1020">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&amp;family=Space+Grotesk:wght@500;600&amp;display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#0B1020; --panel:#121A33; --text:#E8EEF9; --muted:#9AA8C7; --line:#24304f;
-  --before:#FFB547; --after:#3DD6C6; --ko:#0B1020; --star:#FFFFFF;
-}
-@media (prefers-color-scheme: light){
-  :root{
-    --bg:#F4F6FB; --panel:#FFFFFF; --text:#0B1020; --muted:#4A5675; --line:#D9DFEE;
-    --before:#E08A00; --after:#0E9F90; --ko:#F4F6FB; --star:#0B1020;
-  }
-}
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'Space Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;line-height:1.6}
-a{color:var(--after)}
-a:hover{text-decoration-thickness:2px}
-.wrap{max-width:960px;margin:0 auto;padding:0 20px}
-header{padding:28px 0 0}
-.badge{display:inline-block;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
-.hero{padding:56px 0 40px;display:flex;flex-wrap:wrap;align-items:center;gap:40px}
-.hero svg{flex:none;width:180px;height:180px}
-.hero-text{flex:1 1 360px;min-width:0}
-h1{margin:0;font-size:clamp(44px,9vw,88px);line-height:1;letter-spacing:-.035em;font-weight:500}
-h1 .dash{color:var(--after)}
-h1 b{font-weight:600}
-.tag{margin:16px 0 0;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.lead{font-size:clamp(20px,3vw,26px);line-height:1.4;max-width:34em;margin:0 0 56px}
-h2{font-size:15px;font-family:'JetBrains Mono',ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:400;margin:0 0 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:56px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:24px}
-.card h3{margin:0 0 8px;font-size:22px;font-weight:600;letter-spacing:-.01em}
-.card p{margin:0;color:var(--muted)}
-.split{display:flex;align-items:stretch;gap:0;margin-bottom:56px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:var(--panel)}
-.split div{flex:1 1 0;padding:24px;min-width:0}
-.split div+div{border-left:1px solid var(--line)}
-.split .k{font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
-.split .b .k{color:var(--before)}
-.split .a .k{color:var(--after)}
-.split p{margin:0}
-@media (max-width:560px){.split{flex-direction:column}.split div+div{border-left:0;border-top:1px solid var(--line)}}
-.status{border-left:4px solid var(--before);padding:4px 0 4px 20px;margin-bottom:56px}
-.status p{margin:0}
-footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:15px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
-footer a{color:var(--text)}
-</style>
-</head>
-<body>
-<div class="wrap">
+---
+layout: default
+---
   <header><span class="badge">early stage</span></header>
 
   <section class="hero" aria-labelledby="title">
@@ -119,13 +56,6 @@ footer a{color:var(--text)}
   </div>
 
   <div class="status">
-    <p><strong>Status:</strong> just getting started. This page is a placeholder while the first version takes shape. Follow the work in the <a href="https://github.com/diff-voyager/diff-voyager">diff-voyager/diff-voyager</a> repository.</p>
+    <p><strong>Status:</strong> just getting started. This page is a placeholder while the first version takes shape. Follow the work in the <a href="{{ site.repository_url }}">diff-voyager/diff-voyager</a> repository.</p>
   </div>
 
-  <footer>
-    <span>diff-voyager</span>
-    <a href="https://github.com/diff-voyager/diff-voyager">Source on GitHub</a>
-  </footer>
-</div>
-</body>
-</html>
